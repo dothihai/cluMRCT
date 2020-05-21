@@ -6,11 +6,11 @@ from Algorithm import *
 from itertools import combinations
 class Instance(object):
 	"""docstring for Insta"""
-	def __init__(self, name):
+	def __init__(self, name, seed):
 		self.name = name
 		filename = 'test/'+name
-		self.resultname = 'result/_'+name+'_.gen'
-		self.resultnameopt = 'result/_'+name+'_.opt'
+		self.resultname = 'result/' + name[0:len(name)-4] + '_' + 'seed(' + str(seed) + ')' + '.gen'
+		self.resultnameopt = 'result/'+name[0:len(name)-4]+ '_' + 'seed(' + str(seed) + ')' + '.opt'
 		self.coor = []
 		with open(filename) as f:
 			if "NODE_COORD_SECTION" not in f.read():
