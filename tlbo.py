@@ -4,7 +4,7 @@ from functools import reduce
 import matplotlib.pyplot as plt
 from operator import attrgetter
 import time
-listfile = listdir("test")
+listfile = listdir("Type_1_Large")
 pop= 100
 gen = 500
 # listfile = ['10hk48.clt']
