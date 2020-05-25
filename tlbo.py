@@ -6,7 +6,7 @@ from operator import attrgetter
 import time
 listfile = listdir("test")
 pop= 100
-gen = 500
+gen = 100
 # listfile = ['10hk48.clt']
 # listfile = ['6i300.clt']
 # listfile = ['10eil76.clt']
@@ -67,7 +67,7 @@ for file in listfile:
 			pos = {}
 		
 
-		# for x in range(len(instance.coor)):
-		# 	pos.update({x:instance.coor[x]})
-		# nx. draw_networkx(best.tree,pos)
-		# plt.show()
+		for x in range(len(instance.coor)):
+			pos.update({x:instance.coor[x]})
+		nx. draw_networkx(best.tree,pos)
+		plt.show()
